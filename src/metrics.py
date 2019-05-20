@@ -3,7 +3,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, roc_a
 def print_metrics(y_test, y_pred):
 #y_test -- test (expected) labels
 #y_pred -- predicted (actual) class
-    print('accuracy: ')
+    print('\naccuracy: ')
     print(accuracy_score(y_test, y_pred))
     print('\nprecision: ')
     print(precision_score(y_test, y_pred))
@@ -20,7 +20,7 @@ def print_fnr_fpr(y_test, y_pred):
 #y_test -- test (expected) labels
 #y_pred -- predicted (actual) class
     fnr, fpr = calc_fnr_fpr(y_test, y_pred)
-    print('FNR: ')
+    print('\nFNR: ')
     print(fnr)
     print('\nFPR: ')
     print(fpr)
